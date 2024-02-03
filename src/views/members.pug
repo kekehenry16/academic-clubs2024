@@ -1,0 +1,48 @@
+extend layout 
+block content
+    button.button(style="color:white; border:0; padding:10px 20px;")
+        a(href='/memberForm' style="color:white; border:0; padding:10px 20px;") register Member
+    table.table
+        thead
+            tr
+                th NAME
+                th REGISTRATION
+                th COURSE
+                th DATE_JOINED
+
+        tbody
+            each member in members
+            
+                tr
+                td= member.member_name
+                td= member.member_reg
+                td= member.member_course
+                td= member.date_joined
+
+
+    style.
+        .table {
+        width: 60%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        }
+
+        th, td {
+        border: 2px solid #ddd;
+        padding: 10px;
+        text-align: left;
+        }
+
+        th {
+        background-color: #3498db;
+        color: #fff;
+        }
+
+
+    
+        
+        
+
+ 
+      
+    

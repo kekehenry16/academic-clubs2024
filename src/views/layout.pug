@@ -1,0 +1,135 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Academic Clubs Management System
+    style.
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .brand-box {
+          padding: 10px;
+          border-radius: 10px;
+          color:white;
+        
+        }    
+
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            
+            
+        }
+        
+        
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #3498db;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 36px;
+        }
+         .welcome-container {
+            text-align: center;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        h1.welcome-heading {
+            color: #3498db;
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1.welcome-heading span {
+            color: #e74c3c;
+        }
+
+        p.welcome-text {
+            font-size: 25px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Animation */
+        h1.welcome-heading,
+        p.welcome-text {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards 0.5s;
+        }
+        @keyframes fadeInUp {
+            to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 10px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        
+        p {
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1.6;
+            color: #555;
+        }
+
+    body
+
+        header
+            .container
+            .brand-box
+                h1 Academic Clubs Management System
+            .container
+                a.button(href='/members') members
+                a.button(href='/clubs') clubs
+                a.button(href='/events') Events
+                a.button(href='/attendance') Attendance
+        .welcome-container
+        h1.welcome-heading(style="text-align:center;") Welcome to the <span>Academic Clubs Management System</span></h1>
+   
+        div(style='display:flex; justify-content:center; align-items:center; flex-direction:column;')
+            block content
+
+        footer
+            div
+
+                h4(style="text-align:center; margin-top:20px;") Developed by group@dit 2024

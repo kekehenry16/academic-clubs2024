@@ -1,0 +1,45 @@
+extend layout
+block content
+    table.table
+        thead
+            tr
+                th NAME
+                th NO_STUDENT
+                th DISCRIPTION
+                th ADVISOR
+                th DATE CREATED
+                
+
+        tbody
+            each club in clubs
+            
+                tr
+                td= club.club_name
+                td= club.no_student
+                td= club.club_discription
+                td= club.advisor_name
+                td= club.date_created
+                
+
+    style.
+        .table {
+        width: 60%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        }
+
+        th, td {
+        border: 2px solid #ddd;
+        padding: 10px;
+        text-align: left;
+        }
+
+        th {
+        background-color: #3498db;
+        color: #fff;
+        }
+
+
+    
+        
+        

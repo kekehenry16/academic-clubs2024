@@ -1,0 +1,45 @@
+extend layout
+block content 
+    table.table
+        thead
+            tr
+                th EVENT
+                th VENUE
+                th DATE
+                th DISCRIPTION
+
+        tbody
+            each event in events
+            
+                tr
+                td= event.event_name
+                td= event.event_venue
+                td= event.event_date
+                td= event.event_discription
+
+
+    style.
+        .table {
+        width: 60%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        }
+
+        th, td {
+        border: 2px solid #ddd;
+        padding: 10px;
+        text-align: left;
+        }
+
+        th {
+        background-color: #3498db;
+        color: #fff;
+        }
+
+
+    
+        
+        
+
+ 
+      

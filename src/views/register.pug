@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title DIT-ADMS
+    script(src="https://cdn.tailwindcss.com")
+    link(rel="stylesheet", href="path-to-your-compiled-css-file")
+  body 
+    .py-24
+    .flex.items-center.max-w-sm.mx-auto.overflow-hidden.bg-green-500.rounded-lg.shadow-lg.text-white
+        form.w-full.p-8(action='regUser' method="post")
+            h2.text-2xl.font-semibold.text-center.text-white ACMS Regitser User
+            .mt-4
+            label.block.mb-2.text-sm.font-bold.text-white Username
+            input.block.w-full.px-4.py-2.text-gray-700.bg-gray-200.border.border-gray-300.rounded.appearance-none(class='focus:outline-none focus:shadow-outline' type='text' required name='username')
+            .mt-4
+            label.block.mb-2.text-sm.font-bold.text-white Email Address
+            input.block.w-full.px-4.py-2.text-gray-700.bg-gray-200.border.border-gray-300.rounded.appearance-none(class='focus:outline-none focus:shadow-outline' type='email' required name='email')
+            .mt-4
+            .flex.justify-between
+                label.block.mb-2.text-sm.font-bold.text-white Password
+            input.block.w-full.px-4.py-2.text-gray-700.bg-gray-200.border.border-gray-300.rounded.appearance-none(class='focus:outline-none focus:shadow-outline' type='password' required name='password')
+            .mt-4
+            .flex.justify-between
+                label.block.mb-2.text-sm.font-bold.text-white Confirm Password
+            input.block.w-full.px-4.py-2.text-gray-700.bg-gray-200.border.border-gray-300.rounded.appearance-none(class='focus:outline-none focus:shadow-outline' type='password' required name='password2')
+            .mt-8
+                button.w-full.px-4.py-2.font-bold.text-white.bg-green-700.rounded(type='submit') Register
+            .flex.items-center.justify-between.mt-4
+                span.text-green-500.border-b(class='w-1/5 md:w-1/4') 
+                span.text-red-400.border-b(class='w-1/5 md:w-1/4') 
