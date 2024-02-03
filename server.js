@@ -44,7 +44,7 @@ app.post('/authUser', (req, res)=> {
       }
       if (results.length > 0) {
 
-        res.redirect('/events');
+        res.redirect('/members');
 
       } else {
         res.send('wrong credential! use correct credentials');
